@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Diák regisztráció</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body>
+  <h1>Regisztrációs űrlap</h1>
+  <form id="regForm" action="{{ url_for('regisztracio') }}" method="POST">
+    <label for="nev">Név:</label>
+    <input type="text" name="nev" id="nev"><br>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email"><br>
+
+    <label for="szak">Szak:</label>
+    <input type="text" name="szak" id="szak"><br>
+
+    <button type="submit">Regisztrálok</button>
+  </form>
+
+  <p id="feedback"></p>
+</body>
+</html>
