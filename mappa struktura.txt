@@ -1,0 +1,10 @@
+diak_regisztracio/
+│
+├── app.py
+├── templates/
+│   ├── index.html
+│   └── siker.html
+├── static/
+│   ├── style.css
+│   └── script.js
+├── requirements.txt
